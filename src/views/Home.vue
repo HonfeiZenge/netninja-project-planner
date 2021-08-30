@@ -23,7 +23,7 @@ export default {
   components: { SingleProject, FilterNav },
   data() {
     return {
-      endpoint_url: 'https://my-json-server.typicode.com/HonfeiZenge/netninja-project-planner',
+      endpoint_url: 'https://my-json-server.typicode.com/HonfeiZenge/netninja-project-planner/projects',
       projects: [],
       current: 'all'
     }

@@ -14,7 +14,7 @@ export default {
     return {
       title: '',
       details: '',
-      uri: 'https://my-json-server.typicode.com/HonfeiZenge/netninja-project-planner',
+      uri: 'https://my-json-server.typicode.com/HonfeiZenge/netninja-project-planner/projects',
     }
   },
   methods: {

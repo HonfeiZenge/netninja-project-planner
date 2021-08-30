@@ -22,7 +22,7 @@ export default {
   data() {
     return {
       showDetails: false,
-      uri: `https://my-json-server.typicode.com/HonfeiZenge/netninja-project-planner/${this.project.id}`,
+      uri: `https://my-json-server.typicode.com/HonfeiZenge/netninja-project-planner/projects/${this.project.id}`,
     }
   },
   methods: {
