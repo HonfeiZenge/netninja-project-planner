@@ -1,0 +1,28 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Create New Homepage Banner",
+      "details": "Lorem ipsum lorem ipsum",
+      "complete": true
+    },
+    {
+      "id": 2,
+      "title": "Make marketing email",
+      "details": "Lorem ipsum",
+      "complete": false
+    },
+    {
+      "id": 3,
+      "title": "Meeting with DevOps Division",
+      "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quae quisquam quibusdam perspiciatis possimus dolore laboriosam ex non aut ducimus quo odit excepturi architecto, quod modi maiores amet blanditiis quasi.",
+      "complete": true
+    },
+    {
+      "title": "Design UX for About page",
+      "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quae quisquam quibusdam perspiciatis possimus dolore laboriosam ex non aut ducimus quo odit excepturi architecto, quod modi maiores amet blanditiis quasi.",
+      "complete": false,
+      "id": 4
+    }
+  ]
+}
