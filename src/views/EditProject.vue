@@ -18,17 +18,8 @@ export default {
     return {
       title: '',
       details: '',
-      uri: `http://localhost:3000/projects/${this.id}`
+      uri: `https://my-json-server.typicode.com/HonfeiZenge/netninja-project-planner/${this.id}`
     }
-  },
-  mounted() {
-    fetch(this.uri)
-      .then(response => response.json())
-      .then(projectData => {
-        this.title = projectData.title
-        this.details = projectData.details
-      })
-      .catch(err => console.log(err.message))
   },
   methods: {
     handleUpdate() {
@@ -45,7 +36,16 @@ export default {
         .then(response => response.status === 200 ? this.$router.push('/') : console.log(response.status))
         .catch(err => console.log(err.message))
     }
-  }
+  },
+  mounted() {
+    fetch(this.uri)
+      .then(response => response.json())
+      .then(projectData => {
+        this.title = projectData.title
+        this.details = projectData.details
+      })
+      .catch(err => console.log(err.message))
+  },
 }
 </script>
 

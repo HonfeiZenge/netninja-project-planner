@@ -23,16 +23,10 @@ export default {
   components: { SingleProject, FilterNav },
   data() {
     return {
-      endpoint_url: 'http://localhost:3000/projects',
+      endpoint_url: 'https://my-json-server.typicode.com/HonfeiZenge/netninja-project-planner',
       projects: [],
       current: 'all'
     }
-  },
-  mounted() {
-    fetch(this.endpoint_url)
-      .then(response => response.json())
-      .then(data => this.projects = data)
-      .catch(err => console.log(err.message))
   },
   methods: {
     handleDelete(id) {
@@ -60,6 +54,12 @@ export default {
       }
       
     }
-  }
+  },
+  mounted() {
+    fetch(this.endpoint_url)
+      .then(response => response.json())
+      .then(data => this.projects = data)
+      .catch(err => console.log(err.message))
+  },
 }
 </script>
